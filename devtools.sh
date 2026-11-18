@@ -1,3 +1,11 @@
+verificar() {
+    if command -v "$1" >/dev/null 2>&1; then
+        echo "$1 instalado!"
+    else
+        echo "$1 nao encontrado."
+    fi
+}
+
 while true; do
 echo "BEM VINDO AO DEVTOOLS CLI"
 echo "====================="
